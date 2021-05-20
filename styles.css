@@ -45,14 +45,13 @@ header.home-page {  /*Background image only applied to homepage.*/
   margin: 16px 35px;
   font-weight: bold;
   font-size: 20px;
-  letter-spacing: 10px;
 }
 
 #home:hover { /* Changed the on hover white background to more subtle effect.*/
   transform: translateY(0) scale(1.2);
   letter-spacing: 0.1rem;
   transition: 0.7s;
-
+  letter-spacing: 10px;
 }
 
 #home a {
