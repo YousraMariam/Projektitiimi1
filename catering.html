@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="catering_override.css">
+    <title>Catering</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <div class="logo">
+                    <a id="home" href="index.html">LOGO</a>
+                </div>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="catering.html">Catering</a></li>
+                <li><a href="./contactus.html">Contact us</a></li>
+                <li><a href="#">Shopping Cart</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <h1 id="title">
+        Catering Custom Order Form
+      </h1>
+      
+      <p id="description">
+        Planning something a little special? Our Catering Team will gladly help you! 
+        <br>
+        Please fill in the form below:
+      </p>
+      
+      <form id="survey-form">
+        
+        <label for="name" id="name-label">Name</label> <br>
+        <input type="text" id="name" name="name" placeholder="name" required>
+        <br>
+        <label for="email" id="email-label">Email</label> <br>
+        <input type="email" id="email" name="email" placeholder="example@mail.com" required>
+        <br>
+        <label for="number" id="number-label">Phone Number</label> 
+        <br>
+        <input type="tel" id="number" name="number" placeholder="123-45-678" required min="8" max="12">
+        <br>
+        <label for="dropdown" id="dropdown-label">What event are you planning?</label>
+        <br>
+        <select id="dropdown" name="event">
+          <option disable selected value>
+            Choose an Event</option>
+          <option value="birthday">Birthday Party
+          </option>
+          <option value="wedding">Wedding
+          </option>
+          <option value="festival">Festival
+          </option> 
+          <option value="christmas">Christmas Celebration
+          </option>
+          <option value="other">Other
+          </option>
+        </select>
+        <br>
+        
+        <p>Estimated number of attendees:</p>
+        <input type="radio" id="attendees1" name="attendees" value="10">
+        <label for="attendees">0-10</label>
+        <br>
+        <input type="radio" id="attendees2" name="attendees" value="20">
+        <label for="attendees">10-20</label>
+        <br>
+        <input type="radio" id="attendees3" name="attendees" value="30">
+        <label for="attendees">20-30</label>
+        <br>
+        <input type="radio" id="attendees4" name="attendees" value=">30">
+        <label for="attendees">Over 30</label>
+        <br>
+        
+        <p>I would like to order:</p>
+        <input type="checkbox" id="beverages" name="beverages" value="beverages">
+        <label for="beverages">Beverages</label>
+        <br>
+         <input type="checkbox" id="main_courses" name="main_courses" value="main_courses">
+        <label for="main_courses">Main Courses</label>
+        <br>
+         <input type="checkbox" id="desserts" name="desserts" value="desserts">
+        <label for="desserts">Desserts</label>
+        <br>
+        
+        <p>Additional information:</p>
+        <textarea id="additional_info" name="additional_info" rows="20" cols="70">
+        </textarea>
+          <br>
+          <input type="submit" id="submit" value="Submit">
+        
+      </form>
+    
+</body>
+</html>

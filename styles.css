@@ -1,0 +1,287 @@
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+}
+
+header {
+  min-height: 100vh;
+  width: 100%;
+  background: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
+    url(images/whitecake.png.jpg);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+.logo {
+  line-height: 60px;
+  position: fixed;
+  float: left;
+  margin: 16px 35px;
+  color: rgb(226, 225, 225);
+  font-weight: bold;
+  font-size: 30px;
+  letter-spacing: 20px;
+}
+
+nav {
+  position: fixed;
+  width: 100%;
+  line-height: 60px;
+}
+
+nav ul {
+  line-height: 60px;
+  list-style: none;
+  background: transparent;
+  color: rgb(247, 242, 242);
+  overflow: hidden;
+  padding: 0;
+  text-align: right;
+  margin: 0;
+  padding-right: 35px;
+  transition: 1s;
+}
+
+nav ul li {
+  display: inline-block;
+  padding: 16px 35px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: grey;
+  font-size: 15px;
+}
+
+nav ul li:hover {
+  background-color: rgb(255, 249, 249);
+}
+
+.text-box {
+  width: 90%;
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.text-box h1 {
+  font-size: 62px;
+  overflow: hidden;
+  animation-duration: 3s;
+  animation-name: slidein;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+.text-box p {
+  margin: 10px 0 40px;
+  font-size: 14px;
+  color: white;
+}
+
+/*----downheader-----*/
+.downheader {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding: 100px;
+}
+
+h1 {
+  font-size: 36px;
+  font-weight: 600;
+}
+
+p {
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 22px;
+  padding: 10px;
+}
+.row {
+  margin: 5%;
+  display: flex;
+  justify-content: space-between;
+}
+.laivokset-col {
+  flex-basis: 31%;
+  background: rgb(247, 242, 242);
+  border-radius: 10px;
+  margin-top: 5%;
+  padding: 20px 12px;
+  box-sizing: border-box;
+  transition: 0.5s;
+}
+
+h3 {
+  text-align: center;
+  font-weight: 600;
+  margin: 10px 0;
+}
+
+.laivokset-col:hover {
+  box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+}
+
+/*-------- leivokset-----*/
+
+.leivokset {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 50px;
+}
+
+.kakut-col {
+  flex-basis: 32%;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  position: relative;
+  overflow: hidden;
+}
+.kakut-col img {
+  width: 100%;
+  display: block;
+  size: unset;
+}
+
+.layer {
+  background: transparent;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: 0.5s;
+}
+
+.layer:hover {
+  background: rgba(212, 201, 201, 0.7);
+}
+.layer h3 {
+  width: 100%;
+  font-weight: 500;
+  color: rgb(0, 0, 0);
+  font-size: 26px;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  position: absolute;
+  opacity: 0;
+  transition: 0.5s;
+}
+.layer:hover h3 {
+  bottom: 49%;
+  opacity: 1;
+}
+
+/* Contact Us styles */
+
+.form h1,
+h4 {
+  margin: 1rem;
+}
+
+main {
+  width: 80%;
+  margin: auto;
+  padding: 100px;
+}
+
+fieldset {
+  margin-top: 2.5rem;
+  padding: 2rem;
+  border: 1px solid rgb(197, 197, 197);
+  border-radius: 0.25rem;
+}
+
+legend {
+  color: #6e8035;
+  font-weight: bold;
+}
+
+input[type="text"], /* tämän avulla tyylitys vaikuttaa vain input osioihin joissa tyyppi on teksti */
+input[type="email"],
+input[type="tel"],
+select,
+textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid rgb(207, 207, 207);
+  border-radius: 0.25rem; /* pyöristää reunoja */
+}
+
+.formBtn {
+  background-color: #6e8035;
+  color: rgb(247, 247, 247);
+  font-weight: bold;
+  padding: 0.75rem 1.25rem;
+  border: none;
+  border-radius: 2rem;
+  cursor: pointer;
+}
+
+.formBtn:hover {
+  background-color: #5d6e25;
+}
+
+/*------FOOTER------*/
+
+footer {
+  margin-top: 15%;
+  padding-top: 15px;
+  display: flex;
+  background-color: rgb(143, 140, 140, 0.5);
+}
+.footer_internal_links,
+.footer_internal_links a {
+  color: black;
+  white-space: nowrap;
+
+}
+.footer_social_media {
+  display: flex;
+  justify-content: space-around;
+  padding-left: 7%;
+}
+.footer_social_media img {
+  width: 15%;
+}
+.footer_contact_info {
+  padding-right: 30px;
+}
+.copyright {
+  background-color: rgb(143, 140, 140, 0.5);
+  display: flex;
+  justify-content: center;
+  margin: 0;
+}
+
+/* The goal of responsive wed design is to create web pages that look good on all devices.
+   It is about using HTML and CSS to automatically for example to resize a website to fit a particular device.
+
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   Use this to set the viewport which will give the browser all the necessary instructions.
+   
+   Use @media rule to include a block of CSS properties only if a certain condition is true.
+   Add a breakpoint where certain parts of the design will behave differently.
+*/
+
+/*@media screen and (max-width:768px*/
