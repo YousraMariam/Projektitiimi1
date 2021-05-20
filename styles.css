@@ -261,6 +261,10 @@ textarea {
   border-radius: 0.25rem; /* pyöristää reunoja */
 }
 
+#survey-form{ /* I added this so the form isn't glued to the bottom of the page. */
+  padding-bottom: 70px;
+}
+
 .formBtn {
   background-color: #6e8035;
   color: rgb(247, 247, 247);
