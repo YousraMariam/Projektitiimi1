@@ -18,8 +18,8 @@ body.aboutus-bg {
   
 }
 
-body.main-bg {  /* Added background-color to contactus.html*/
-  background-color: darkgrey;
+body.main-bg { 
+  background-color: rgba(218, 214, 214, 0.39);
 }
 
 header.home-page {  /*Background image only applied to homepage.*/
